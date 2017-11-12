@@ -1,0 +1,17 @@
+\begin{thebibliography}{10}
+
+\bibitem{FAMTAR_LETTERS}
+Robert Wójcik, Jerzy Domżal, and Zbigniew Duliński.
+\newblock {Flow-Aware Multi-Topology Adaptive Routing}.
+\newblock {\em IEEE Communications Letters}, 18(9):1539--1542, Sep 2014.
+\newblock \href {http://dx.doi.org/10.1109/LCOMM.2014.2334314}
+  {\path{doi:10.1109/LCOMM.2014.2334314}}.
+
+\bibitem{baumann2007survey}
+Rainer Baumann, Simon Heimlicher, Mario Strasser, and Andreas Weibel.
+\newblock {A survey on routing metrics}.
+\newblock {\em TIK report}, 262, 2007.
+\newblock URL:
+  \url{http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.304.7863}.
+
+\end{thebibliography}

@@ -1,0 +1,10 @@
+\chapter{Mechanizm FAMTAR}
+\label{chapter-3}
+
+Ten rozdział poświęcony jest mechanizmowi FAMTAR. W sekcji pierwszej opisane są jego podstawy. Rozpoczyna się ona od przedstawienia zalet mechanizmu \mbox{FAMTAR} nad dotychczasowymi mechanizmami rutingu wielodrogowego i adaptacyjnego. Następnie opisany jest sam algorytm rutingu pakietów w ruterach \mbox{FAMTAR} oraz procedury postępowania w przypadku wystąpienia awarii w sieci. Sekcja druga zawiera opis dwóch zaproponowanych rozszerzeń mechanizmu. Pozwalają one na zmniejszenie liczby przepływów przechowywanych w tablicy FFT i ograniczenie kosztów implementacji mechanizmu.
+
+\vspace{0.5cm}
+
+\section{Podstawowy mechanizm FAMTAR}
+
+Koncepcja FAMTAR (Flow-Aware Multi-Topology Adaptive Routing) stanowi próbę odpowiedzi na wady istniejących mechanizmów rutingu wielodrogowego i adaptacyjnego. Została ona zaproponowana w \cite{FAMTAR_LETTERS}. Mechanizm FAMTAR pozwala na uzyskanie w sieci IP adaptacyjnego rutingu wielodrogowego. Jego zaletą jest prostota działania i implementacji. Mechanizm FAMTAR działa ponad protokołem rutingu i może współpracować z dowolnym protokołem rutingu wewnątrzdomenowego. W szczególności dotyczy to protokołu OSPF -- najpopularniejszego obecnie protokołu rutingu wewnątrzdomenowego. Nie są wymagane przy tym żadne modyfikacje w samym protokole czy sposobie działania demona rutingu.

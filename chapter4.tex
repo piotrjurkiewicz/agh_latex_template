@@ -1,0 +1,10 @@
+\chapter{Implementacja rutera}
+\label{chapter-4}
+
+W tym rozdziale przedstawiono szczegóły implementacji rutera programowego FAMTAR. Celem sekcji pierwszej jest zapoznanie czytelnika z ogólną architekturą ruterów, a w szczególności ruterów programowych. W kolejnej sekcji przedstawiono architekturę stworzonego rutera programowego FAMTAR. Uzasadniony jest w niej wybór platformy implementacyjnej (system Linux i środowisko Click) oraz opisane są poszczególne komponenty rutera. Następnie w rozdziale zawarty jest szczegółowy opis środowiska Click oraz skonfigurowanego w nim standardowego rutera IP. Ostatnia sekcja zawiera opis zmian wprowadzonych do tej konfiguracji w związku z uzupełnieniem jej o mechanizm FAMTAR, w tym szczegółowy opis nowych elementów Clicka, jakie zostały w tym celu stworzone.
+
+\vspace{0.5cm}
+
+\section{Architektura ruterów}
+
+Ze względu na pełnione funkcje, ruter można podzielić na dwie części logiczne: płaszczyznę sterowania (\emph{control plane}) i płaszczyznę danych (\emph{data plane} lub \emph{forwarding plane}). Do zadań płaszczyzny sterowania należy przede wszystkim obsługa protokołów rutingu i budowa na ich podstawie tablic rutingu. W płaszczyźnie sterowania znajdują się także funkcje zarządzania i administracji urządzeniem. Z kolei do zadań płaszczyzny danych należy klasyfikacja, kolejkowanie i obróbka pakietów przechodzących przez ruter. W szczególności dotyczy to przełączania pakietów na podstawie informacji o trasach znajdujących się w tablicy rutingu.

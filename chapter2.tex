@@ -1,0 +1,10 @@
+\chapter{Stan wiedzy}
+\label{chapter-2}
+
+Celem tego rozdziału jest przedstawienie tła na jakim powstał mechanizm \mbox{FAMTAR} i alternatywnych dla niego rozwiązań zapewniających ruting wielodrogowy lub adaptacyjny. W sekcji pierwszej zostały opisane podstawy rutingu w sieciach komputerowych. Zamieszczony jest w niej także krótki przegląd protokołów rutingu dynamicznego. W dwóch kolejnych sekcjach przedstawiono w sposób ogólny koncepcje rutingu wielodrogowego i rutingu adaptacyjnego. W dalszej części rozdział zawiera przegląd rozwiązań zapewniających ruting wielodrogowy lub adaptacyjny, najpierw w środowisku wewnątrzdomenowym, a następnie w środowisku międzydomenowym.
+
+\vspace{0.5cm}
+
+\section{Ruting w sieciach komputerowych}
+
+W sieciach pakietowych przesyłanie danych pomiędzy sieciami odbywa się poprzez węzły pośredniczące, nazywane ruterami. Zadaniem rutera jest odczytanie adresu sieci docelowej z nagłówka pakietu i określenie na jego podstawie oraz na podstawie informacji o topologii całej sieci, do której z sieci przyłączonych do rutera należy przesłać dalej pakiet, aby dotarł on do sieci docelowej. Samo przekazanie pakietu odbywa się w przełączniku, który może być osobnym urządzeniem albo stanowić część rutera. Rutingiem określa się zaś sam proces wyboru trasy, jaką należy przesłać pakiet w sieci. Wybierana zazwyczaj jest trasa najlepsza z jakiegoś punktu widzenia, na przykład najkrótsza lub najtańsza. Metryką mogłoby być także opóźnienie osiągane na danej trasie (przegląd stosowanych metryk dostępny jest w \cite{baumann2007survey}). Wybrane najlepsze trasy do poszczególnych sieci docelowych zapamiętywane są w tzw. tablicach rutingu. Dzięki temu nie jest konieczne każdorazowe wyznaczanie najlepszej trasy podczas przetwarzania kolejnych pakietów -- odbywa się to tylko raz w momencie zmiany topologii sieci. Zazwyczaj w tablicach rutingu nie jest przechowywana cała trasa, lecz tylko adres kolejnego rutera leżącego na tej trasie, tzw. \emph{next hop}.
